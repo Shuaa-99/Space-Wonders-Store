@@ -51,6 +51,7 @@ img {
 }
 
 header{
+  /* background-image: url('./Images/header\ .jpg'); */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -104,6 +105,7 @@ header li {
   height: 50px;
   border-radius: 50%;
   margin-bottom: 10px;
+  margin: 25px;
 }
 
 .review h3 {
@@ -116,7 +118,6 @@ header li {
   font-size: 0.9rem;
   color: #666;
 }
-
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -125,3 +126,12 @@ header li {
     transform: translateX(-100%);
   }
 }
+#subscribe form { 
+  text-align: center; 
+ 
+}
+footer {
+  text-align: center;
+}
+
+
