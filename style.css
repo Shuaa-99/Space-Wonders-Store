@@ -21,9 +21,7 @@ section {
   color: #333;             
   text-align: center;       
 }
-img {
-  width: 200px; height: auto;
-}
+
 /* Container for the flexbox */
 .flex-container {
   /* background-color: black; */
@@ -49,7 +47,9 @@ img {
   /* Each item will take up equal space */
   /* margin: 10px; */
 }
-
+.products img {
+  width: 200px; height: auto;
+}
 header{
   /* background-image: url('./Images/header\ .jpg'); */
   display: flex;
@@ -83,20 +83,13 @@ header li {
     /* Each item will take up equal space */
     margin: 15px;
 }
+
 .reviews{
   border: 2px solid blanchedalmond;
 }
-.reviews-marquee {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: marquee 50s linear infinite;
-}
-
 .review {
   display: inline-block;
   text-align: center;
-  
   margin: 0 50px; 
 }
 
