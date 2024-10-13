@@ -10,12 +10,13 @@ body {
   background-color: rgb(164, 141, 141);
 font-size: 12px;
 letter-spacing: 1px;
-position: absolute;
+/* position: absolute; */
 top: 200px;
 }
 section {
   padding: 20px;
   margin-bottom: 40px; 
+  scroll-margin-top: 200px;
 }
 .section-title {
   font-size: 1rem;            
@@ -55,7 +56,6 @@ section {
 }
 header {
   position: sticky;
-
   top: 0;
   left: 0;
   background-image: url('./Images/header.jpg');
