@@ -7,10 +7,11 @@
 body {
  font-family: "Montserrat", sans-serif; 
  color: black;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(164, 141, 141);
 font-size: 12px;
 letter-spacing: 1px;
-padding-top: 200px;
+position: absolute;
+top: 200px;
 }
 section {
   padding: 20px;
@@ -52,16 +53,9 @@ section {
 .products img {
   width: 200px; height: 250px;
 }
-/* header{
-  background-image: url('./Images/header.jpg');
-  background-size: 22;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-} */
 header {
-  position: fixed;
+  position: sticky;
+
   top: 0;
   left: 0;
   background-image: url('./Images/header.jpg');
