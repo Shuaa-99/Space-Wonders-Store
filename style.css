@@ -1,158 +1,134 @@
-*{
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
- font-family: "Montserrat", sans-serif; 
- color: black;
+  font-family: "Montserrat", sans-serif;
+  color: black;
   background-color: rgb(255, 255, 255);
-font-size: 12px;
-letter-spacing: 1px;
-/* position: absolute; */
-/* top: 200px; */
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 section {
   padding: 20px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   scroll-margin-top: 200px;
 }
 .section-title {
-  font-size: 1rem;            
-  margin-bottom: 20px;       
-  color: #333;             
-  text-align: center; 
-  font-family: "Press Start 2P", system-ui;      
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
 }
 
 /* Container for the flexbox */
 .flex-container {
-  /* background-color: black; */
-/* margin-top: 80px; */
-  display: flex; /* Activates flexbox */
-
-  /* Aligns items in a row (default), column */
+  display: flex;
   flex-direction: row;
-
-  /* Space between items: flex-start, flex-end, center, space-between, space-evenly */
   justify-content: space-around;
-  /* space-around  +  flex: 1 (item)*/
-
-  /* Align items vertically in the center : flex-start, flex-end, center, baseline*/
   align-items: center;
 }
 
 /* Flex items */
 .flex-item {
-  border: 2px ;
+  border: 2px;
   text-align: center;
-  /* flex: 1;  */
-  /* Each item will take up equal space */
-  /* margin: 10px; */
 }
 .flex-item p {
-  margin: 8px; 
+  margin: 8px;
 }
 .products img {
-  width: 200px; height: 250px;
+  width: 200px;
+  height: 250px;
 }
 header {
   position: sticky;
   top: 0;
-  /* left: 0; */
   background-image: url('./Images/header.jpg');
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 200px; 
+  height: 200px;
   z-index: 1000;
 }
-.header__logo{
+.header__logo {
   height: 40px;
   width: 40px;
 }
-
-header ul{
-  display: flex; /* Activates flexbox */
-
-  /* Aligns items in a row (default), column */
+header ul {
+  display: flex;
   flex-direction: row;
-
-  /* Space between items: flex-start, flex-end, center, space-between, space-evenly */
   justify-content: space-around;
-  /* space-around  +  flex: 1 (item)*/
-
-  /* Align items vertically in the center : flex-start, flex-end, center, baseline*/
   align-items: center;
   list-style: none;
-} 
+}
 header li {
-    border: 2px ;
-    text-align: center;
-    /* flex: 1;  */
-    /* Each item will take up equal space */
-    margin: 15px;
+  margin: 15px;
 }
 header h1 {
-  color: white ;
+  color: white;
 }
 header li a {
-  color: white ;
+  color: white;
 }
 .typewriter {
   font-family: monospace;
-  overflow: hidden; 
-  color: white ;
-  border-right: .15em solid purple; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  overflow: hidden;
+  color: white;
+  border-right: 0.15em solid purple;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-
-
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-
-
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: rgb(224, 94, 224); }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(224, 94, 224);
+  }
 }
-.store-title{
-  color: white ;
+.store-title {
+  color: white;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-.reviews{
+.reviews {
   border: 2px solid rgb(0, 0, 0);
 }
 .review {
   display: inline-block;
   text-align: center;
-  margin: 0 50px; 
+  margin: 0 50px;
 }
-
 .review img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin: 25px;
 }
-
 .review h3 {
   margin: 5px 0;
   font-size: 1rem;
   color: #333;
 }
-
 .review p {
   font-size: 0.9rem;
   color: #666;
@@ -165,15 +141,12 @@ header li a {
     transform: translateX(-100%);
   }
 }
-#subscribe form { 
-  text-align: center; 
- 
+#subscribe form {
+  text-align: center;
 }
 footer {
   text-align: center;
 }
-
-
 #progress-bar {
   position: fixed;
   top: 0;
